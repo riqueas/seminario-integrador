@@ -1,0 +1,167 @@
+.eventos-container.busca {
+  min-height: 700px;
+}
+
+.pesquisa {
+  display: flex;
+  border-radius: 0.25rem;
+  background: #fff;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.pesquisa input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0rem 0.625rem;
+}
+
+.pesquisa input:focus {
+  background: transparent;
+}
+
+.pesquisa img {
+  grid-row: 1;
+  grid-column: 2;
+  justify-content: end;
+  background: transparent;
+  border: none;
+  padding: 0.313rem;
+}
+
+.pesquisa-secundaria-container {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .pesquisa-container {
+    display: none;
+  }
+
+  .pesquisa-secundaria-container {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.125rem;
+    padding: 0rem 0.625rem;
+  }
+
+  .pesquisa-secundaria {
+    display: flex;
+    border-radius: 0.25rem;
+    background: #fff;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+
+  .pesquisa-secundaria input {
+    background: transparent;
+    border: none;
+    outline: none;
+    grid-row: 1;
+    grid-column: 1 /-1;
+    padding: 0rem 0.625rem;
+  }
+
+  .pesquisa-secundaria input:focus {
+    background: transparent;
+  }
+
+  .pesquisa-secundaria img {
+    grid-row: 1;
+    grid-column: 2;
+    justify-content: end;
+    background: transparent;
+    border: none;
+    padding: 0.313rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .pesquisa-secundaria-container {
+    padding: 0rem 1rem;
+  }
+
+  .pesquisa-secundaria {
+    min-width: 100%;
+  }
+}
+
+.eventos-select-container {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.eventos-select {
+  min-height: 450px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.625rem;
+}
+
+.eventos-select div.select-desc-itens:not(.select-img) {
+  padding: 1.25rem;
+}
+
+.select-img img {
+  border-radius: 0.25rem;
+  height: 100%;
+}
+
+.select-descricao {
+  display: grid;
+  border-radius: 0.25rem;
+  background: #0f1116;
+}
+
+.select-descricao h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  max-width: 30ch;
+}
+
+.select-descricao p {
+  color: #aaa;
+  font-size: 1.125rem;
+  max-width: 40ch;
+}
+
+.select-desc-itens {
+  display: grid;
+  gap: 0.625rem;
+  place-items: start;
+  place-self: start;
+}
+
+@media (max-width: 800px) {
+  .eventos-select {
+    grid-template-columns: 1fr;
+  }
+
+  .select-descricao h2 {
+    font-size: 1.25rem;
+    color: #fff;
+    max-width: 30ch;
+  }
+
+  .select-descricao p {
+    color: #aaa;
+    font-size: 1rem;
+    width: 100%;
+    word-wrap: break-word;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+  .select-descricao h2 {
+    font-size: 1.25;
+    max-width: 100%;
+  }
+
+  .select-descricao p {
+    font-size: 1.125rem;
+    max-width: 100%;
+  }
+}

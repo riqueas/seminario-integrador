@@ -1,0 +1,96 @@
+.header-container {
+  width: 100%;
+  border-bottom: 0.063rem solid #aaa;
+  margin-bottom: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+}
+
+.logo a {
+  font-size: 2rem;
+  color: #aaa;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.header-menu li a {
+  color: #aaa;
+  font-size: 1.125rem;
+}
+
+.header-menu li a.cadastro {
+  background: #00e7f9;
+  color: #095155;
+  padding: 0.625rem 1.25rem;
+  border: 0.063rem solid #095155;
+  border-radius: 0.25rem;
+}
+
+.header-menu li a:not(.cadastro):hover {
+  color: #00e7f9;
+}
+
+.header-menu li a.cadastro:hover {
+  background: #0f1116;
+  color: #00e7f9;
+}
+
+@media (min-width: 600px) {
+  .header-container {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    margin-bottom: 1.25rem;
+  }
+
+  .header-menu li a {
+    color: #aaa;
+    font-size: 1rem;
+  }
+
+  .header-menu li a.cadastro {
+    padding: 0.625rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .logo a {
+    font-size: 1.5rem;
+  }
+
+  .header-menu li a {
+    font-size: 1rem;
+  }
+
+  .header-menu li a.cadastro {
+    padding: 0.313rem;
+  }
+}
+
+@media (max-width: 270px) {
+  .logo a {
+    font-size: 1.25rem;
+  }
+
+  .header-menu li a {
+    font-size: 0.875rem;
+  }
+
+  .header-menu li a.cadastro {
+    padding: 0.25rem;
+    font-size: 0.875rem;
+  }
+}

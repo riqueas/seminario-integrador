@@ -1,0 +1,8 @@
+@import "global/global.css";
+@import "global/header.css";
+@import "global/footer.css";
+@import "home/home.css";
+@import "sobre/sobre.css";
+@import "contato/contato.css";
+@import "cadastro/login-cadastro.css";
+@import "eventos/eventos.css";

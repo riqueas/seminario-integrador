@@ -1,0 +1,29 @@
+.sobre-container {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.sobre {
+  min-height: 450px;
+}
+
+.sobre h2 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.sobre h2,
+p {
+  margin-bottom: 0.625rem;
+}
+
+.sobre p {
+  max-width: 70ch;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .sobre p {
+    font-size: 1.125rem;
+  }
+}

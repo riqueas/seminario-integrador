@@ -1,0 +1,72 @@
+.contato-container {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.625rem;
+  align-items: center;
+  min-height: 450px;
+  padding: 0rem 1.125rem;
+}
+
+.contato div h2 {
+  font-size: 1.75rem;
+  max-width: 28ch;
+  color: #fff;
+  margin-bottom: 0.625rem;
+}
+
+.contato div p {
+  font-size: 1.25rem;
+}
+
+.contato label {
+  font-size: 1.25rem;
+  margin-bottom: 0.313rem;
+}
+
+.contato input {
+  min-height: 2.5rem;
+  margin-bottom: 0.625rem;
+  padding: 0.625rem 1.125rem;
+  border-radius: 0.25rem;
+}
+
+.contato textarea {
+  width: 100%;
+  resize: none;
+  min-height: 150px;
+  margin-bottom: 0.625rem;
+  font-size: 1.125rem;
+  padding: 0.625rem 1.125rem;
+  border-radius: 0.25rem;
+}
+
+.contato form p {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 600px) {
+  .contato-container {
+    margin-bottom: 1.25rem;
+  }
+
+  .contato {
+    grid-template-columns: 1fr;
+  }
+
+  .contato div p {
+    font-size: 1.25rem;
+  }
+
+  .contato label {
+    min-height: 1rem;
+  }
+
+  .contato textarea {
+    min-height: 120px;
+  }
+}
